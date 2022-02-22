@@ -1,0 +1,10 @@
+﻿  SandboxApp.cpp
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\src\Cober\Log.h(5,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\src\Cober\Log.h(6,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\src\Cober\Log.h(20,34): warning C4251: 'Cober::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Cober::Log'
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\libraries\spdlog\include\spdlog\details\registry.h(34): message : vea la declaración de 'std::shared_ptr<spdlog::logger>'
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\src\Cober\Log.h(21,34): warning C4251: 'Cober::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Cober::Log'
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\libraries\spdlog\include\spdlog\details\registry.h(34): message : vea la declaración de 'std::shared_ptr<spdlog::logger>'
+D:\_Mis Cosas\_GAME ENGINE\Cober\Cober\src\Cober\Log.h(36,1): warning C4005: 'ERROR': redefinición de macro
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wingdi.h(118): message : vea la definición anterior de 'ERROR'
+  Sandbox.vcxproj -> D:\_Mis Cosas\_GAME ENGINE\Cober\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe

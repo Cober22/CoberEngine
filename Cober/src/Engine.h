@@ -1,8 +1,8 @@
 #pragma once
 
 // For use by Cober applications
-#include <stdio.h>
 #include "Cober/Application.h"
+#include "Cober/Log.h"
 
 
 // [---- Entry Point ----]

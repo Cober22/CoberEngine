@@ -7,6 +7,6 @@
 		#define CB_API __declspec(dllimport)
 	#endif
 #else
-	#error Cober only supports Windows!
+	#error CoberEngine only supports Windows!
 #endif
 

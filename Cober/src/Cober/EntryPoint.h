@@ -6,7 +6,11 @@ extern Cober::Application* Cober::CreateApplication();
 
 int main(int argc, char** argv) 
 {
-	printf("Primer Print\n");
+	Cober::Log::Init();
+	CORE_WARN("Initialized Log!");
+	int a = 5;
+	INFO("Cool! {0}", a);
+
 	auto app = Cober::CreateApplication();
 	app->Run();
 	delete app;
