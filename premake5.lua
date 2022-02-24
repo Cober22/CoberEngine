@@ -17,7 +17,10 @@ project "Cober"
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "pch.h"
+	pchsource "Cober/src/pch.cpp" 
 
 	files 
 	{
@@ -27,6 +30,7 @@ project "Cober"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/libraries/spdlog/include"
 	}
 
@@ -43,7 +47,7 @@ project "Cober"
 
 		postbuildcommands
 		{
-			"{COPY} %{cfg.buildtarget.relpath} ..\\bin\\" .. outputdir .. "\\Sandbox"
+			{"{COPY} %{cfg.buildtarget.relpath} ..\\bin\\" .. outputdir .. "\\Sandbox"}
 		}
 
 	filter "configurations:Debug"
@@ -65,12 +69,6 @@ project "Sandbox"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
-
-	files 
-	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
-	}
 
 	files 
 	{

@@ -4,6 +4,9 @@
     <Filter Include="Cober">
       <UniqueIdentifier>{50F6F90C-BC0A-22BE-858C-C51DF15F1EEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cober\Events">
+      <UniqueIdentifier>{3468717D-20CB-0022-C950-39D8B592CCA4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Cober\Application.h">
@@ -15,10 +18,23 @@
     <ClInclude Include="src\Cober\EntryPoint.h">
       <Filter>Cober</Filter>
     </ClInclude>
+    <ClInclude Include="src\Cober\Events\ApplicationEvent.h">
+      <Filter>Cober\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cober\Events\Event.h">
+      <Filter>Cober\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cober\Events\KeyEvent.h">
+      <Filter>Cober\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cober\Events\MouseEvent.h">
+      <Filter>Cober\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Cober\Log.h">
       <Filter>Cober</Filter>
     </ClInclude>
     <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Cober\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Cober\Log.cpp">
       <Filter>Cober</Filter>
     </ClCompile>
+    <ClCompile Include="src\pch.cpp" />
   </ItemGroup>
 </Project>

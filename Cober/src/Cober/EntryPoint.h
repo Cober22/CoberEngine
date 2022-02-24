@@ -7,9 +7,9 @@ extern Cober::Application* Cober::CreateApplication();
 int main(int argc, char** argv) 
 {
 	Cober::Log::Init();
-	CORE_WARN("Initialized Log!");
+	CB_CORE_WARN("Initialized Log!");
 	int a = 5;
-	INFO("Cool! {0}", a);
+	CB_INFO("Cool! {0}", a);
 
 	auto app = Cober::CreateApplication();
 	app->Run();
